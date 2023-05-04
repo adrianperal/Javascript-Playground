@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+#container{
     background-color: dimgray;
     height: 100vh;
     display: flex;

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Use media queries to apply styles based on screen size */
+  @media screen and (min-width: 768px) {
+    /* Increase font size and line height for larger screens */
+    body {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  
+    /* Use flexbox for flexible layouts */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    /* Use percentage-based widths for responsive images */
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Use viewport units for font sizes and element sizes */
+  h1 {
+    font-size: 5vw;
+  }
+  
+  /* Use CSS resets to normalize default styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }

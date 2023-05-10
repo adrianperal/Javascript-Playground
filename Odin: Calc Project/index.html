@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin: Calc Project</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/index.js" defer></script>
-</head>
-<body>
-    <div class="container"></div>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <form>
+        <input type="text" id="result" readonly />
+        <br />
+        <button onclick="appendDigit('1', event)">1</button>
+        <button onclick="appendDigit('2', event)">2</button>
+        <button onclick="appendDigit('3', event)">3</button>
+        <button onclick="addOperator('+', event)">+</button>
+        <br />
+        <button onclick="appendDigit('4', event)">4</button>
+        <button onclick="appendDigit('5', event)">5</button>
+        <button onclick="appendDigit('6', event)">6</button>
+        <button onclick="addOperator('-', event)">-</button>
+        <br />
+        <button onclick="appendDigit('7', event)">7</button>
+        <button onclick="appendDigit('8', event)">8</button>
+        <button onclick="appendDigit('9', event)">9</button>
+        <button onclick="addOperator('*', event)">*</button>
+        <br />
+        <button onclick="appendDigit('0', event)">0</button>
+        <button onclick="addOperator('/', event)">/</button>
+        <button onclick="clearResult(event)">C</button>
+        <button onclick="calculate(event)">=</button>
+      </form>
+    </div>
+  </body>
 </html>
